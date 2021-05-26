@@ -73,11 +73,14 @@
     <p>-React 배우고 싶음-</p>
   </div>
 
-  <List :blogContent="blogContent" />
+  <!-- 블로그 글 리스트  -->
+  <router-view :blogContent="blogContent"></router-view>
+
+  <!-- <List :blogContent="blogContent" /> -->
 </template>
 
 <script>
-import List from "./components/List";
+// import List from "./components/List";
 import blogContent from "./assets/blog";
 
 export default {
@@ -88,7 +91,7 @@ export default {
     };
   },
   components: {
-    List,
+    // List,
   },
 };
 </script>
