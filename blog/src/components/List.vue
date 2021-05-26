@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>{{ blogContent[0].title }}</h5>
+    <h5 @click="$emit('detailPage')">{{ blogContent[0].title }}</h5>
     <p>{{ blogContent[0].date }}</p>
   </div>
   <div>

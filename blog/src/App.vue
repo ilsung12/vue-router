@@ -19,10 +19,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link
+              to="/"
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              >Home</router-link
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">1 </a>
+            <router-link to="/list" class="nav-link" href="#"
+              >Contents</router-link
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">2 </a>
@@ -68,10 +76,7 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
-    <h5>Vue 개발자의 블로그 입니다.</h5>
-    <p>-React 배우고 싶음-</p>
-  </div>
+  <home-view></home-view>
 
   <!-- 블로그 글 리스트  -->
   <router-view :blogContent="blogContent"></router-view>
