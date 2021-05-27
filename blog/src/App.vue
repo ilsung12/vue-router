@@ -1,10 +1,10 @@
 <template>
   <nav
     class="navbar navbar-expand-lg navbar-light "
-    style="background-color: #e3f2fd;"
+    style="background-color: rgb(245, 163, 194);"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Vueloo</a>
+      <a class="navbar-brand" href="#">댕텔</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -47,10 +47,10 @@
               더보기
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">A</a></li>
+              <li><a class="dropdown-item" href="#">B</a></li>
               <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">C</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -75,28 +75,30 @@
       </div>
     </div>
   </nav>
-
+  <Discount v-if="showDiscount == true" />
   <home-view></home-view>
 
   <!-- 블로그 글 리스트  -->
-  <router-view :blogContent="blogContent"></router-view>
+  <router-view :hotelContent="hotelContent"></router-view>
 
   <!-- <List :blogContent="blogContent" /> -->
 </template>
 
 <script>
 // import List from "./components/List";
-import blogContent from "./assets/blog";
+import hotelContent from "./assets/hotel";
+import Discount from "./components/Discount";
 
 export default {
   name: "App",
   data() {
     return {
-      blogContent: blogContent,
+      hotelContent: hotelContent,
+      showDiscount: true,
     };
   },
   components: {
-    // List,
+    Discount,
   },
 };
 </script>
