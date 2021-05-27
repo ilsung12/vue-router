@@ -1,15 +1,9 @@
 <template>
-  <div>
-    <h5 @click="$emit('detailPage')">{{ blogContent[0].title }}</h5>
-    <p>{{ blogContent[0].date }}</p>
-  </div>
-  <div>
-    <h5>{{ blogContent[1].title }}</h5>
-    <p>{{ blogContent[1].date }}</p>
-  </div>
-  <div>
-    <h5>{{ blogContent[2].title }}</h5>
-    <p>{{ blogContent[2].date }}</p>
+  <div v-for="(a, i) in blogContent.length" :key="a">
+    <h5 @click="$router.push('/detail/' + i + '')">
+      {{ blogContent[i].title }}
+    </h5>
+    <p>{{ blogContent[i].date }}</p>
   </div>
 </template>
 

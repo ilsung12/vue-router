@@ -4,7 +4,7 @@
     style="background-color: #e3f2fd;"
   >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Vueloo</a>
       <button
         class="navbar-toggler"
         type="button"
