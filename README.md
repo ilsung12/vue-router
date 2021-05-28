@@ -29,7 +29,8 @@
 ---
 
 ## 4. 결과물
-rink : 
+
+## 링크 : https://ilsung12.github.io/daeng-tel/#/
 
 ![1](https://user-images.githubusercontent.com/75682926/119949826-3ac72100-bfd5-11eb-9422-4c7f7266c429.JPG)
 ![2](https://user-images.githubusercontent.com/75682926/119949831-3b5fb780-bfd5-11eb-912d-4c78cb33d577.JPG)
