@@ -31,11 +31,12 @@
 ## 4. 결과물
 
 ## 링크 : https://ilsung12.github.io/daeng-tel/#/
+<br>
 
-![1](https://user-images.githubusercontent.com/75682926/119949826-3ac72100-bfd5-11eb-9422-4c7f7266c429.JPG)
-![2](https://user-images.githubusercontent.com/75682926/119949831-3b5fb780-bfd5-11eb-912d-4c78cb33d577.JPG)
-![3](https://user-images.githubusercontent.com/75682926/119949834-3bf84e00-bfd5-11eb-8223-386e37f92b1a.JPG)
-![4](https://user-images.githubusercontent.com/75682926/119949836-3bf84e00-bfd5-11eb-8ecf-844e0dc59df1.JPG)
+![1](https://user-images.githubusercontent.com/75682926/119949826-3ac72100-bfd5-11eb-9422-4c7f7266c429.JPG)<br>
+![2](https://user-images.githubusercontent.com/75682926/119949831-3b5fb780-bfd5-11eb-912d-4c78cb33d577.JPG)<br>
+![3](https://user-images.githubusercontent.com/75682926/119949834-3bf84e00-bfd5-11eb-8223-386e37f92b1a.JPG)<br>
+![4](https://user-images.githubusercontent.com/75682926/119949836-3bf84e00-bfd5-11eb-8ecf-844e0dc59df1.JPG)<br>
 
 
 
