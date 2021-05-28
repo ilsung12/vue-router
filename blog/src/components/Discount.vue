@@ -1,6 +1,8 @@
 <template>
   <div class="discount">
-    <h4>지금 결제하면 {{ downDiscount }}% 할인</h4>
+    <h4 class="modalText" @click="$emit('openModal')">
+      {{ downDiscount }}% 할인 쿠폰 지급 !
+    </h4>
   </div>
 </template>
 
@@ -12,6 +14,10 @@ export default {
     return {
       downDiscount: 30,
     };
+  },
+  props: {
+    hotelContent: Array,
+    // openModal: Boolean,
   },
 
   mounted() {
@@ -30,5 +36,8 @@ export default {
   background: #eee;
   margin: 20px;
   padding: 30px;
+}
+.modalText {
+  cursor: pointer;
 }
 </style>
