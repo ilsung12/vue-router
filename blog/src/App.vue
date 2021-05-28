@@ -24,16 +24,16 @@
               class="nav-link active"
               aria-current="page"
               href="#"
-              >Home</router-link
+              >홈으로</router-link
             >
           </li>
           <li class="nav-item">
             <router-link to="/list" class="nav-link" href="#"
-              >Contents</router-link
+              >애견호텔 둘러보기</router-link
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">2 </a>
+            <router-link to="/mypage" class="nav-link">마이페이지</router-link>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -47,7 +47,12 @@
               더보기
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">A</a></li>
+              <li>
+                <router-link to="/call" class="dropdown-item-call"
+                  >진료상담</router-link
+                >
+              </li>
+
               <li><a class="dropdown-item" href="#">B</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">C</a></li>
@@ -75,19 +80,29 @@
       </div>
     </div>
   </nav>
-  <Discount v-if="showDiscount == true" />
-  <home-view></home-view>
 
-  <!-- 블로그 글 리스트  -->
-  <router-view :hotelContent="hotelContent"></router-view>
+  <div class="main-app">
+    <Modal
+      @closeModal="modalOpen = false"
+      :modalOpen="modalOpen"
+      :hotelContent="hotelContent"
+    />
+    <Discount @openModal="modalOpen = true" v-if="showDiscount == true" />
+    <home-view></home-view>
 
-  <!-- <List :blogContent="blogContent" /> -->
+    <!-- 블로그 글 리스트  -->
+    <router-view :hotelContent="hotelContent"></router-view>
+
+    <!-- <List :blogContent="blogContent" /> -->
+  </div>
+  <div class="main-app-right"></div>
 </template>
 
 <script>
 // import List from "./components/List";
 import hotelContent from "./assets/hotel";
 import Discount from "./components/Discount";
+import Modal from "./components/Modal";
 
 export default {
   name: "App",
@@ -95,10 +110,12 @@ export default {
     return {
       hotelContent: hotelContent,
       showDiscount: true,
+      modalOpen: false,
     };
   },
   components: {
     Discount,
+    Modal,
   },
 };
 </script>
@@ -111,5 +128,25 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+}
+
+.black-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  padding: 20px;
+}
+
+.white-bg {
+  width: 100%;
+  background: rgb(247, 240, 240);
+  padding: 20px;
+}
+
+.dropdown-item-call {
+  text-decoration: none;
+  color: black;
+  padding: 2%;
 }
 </style>

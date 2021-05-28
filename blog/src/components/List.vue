@@ -26,13 +26,13 @@ export default {
 </script>
 
 <style>
-div {
+/* div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-p {
+} */
+/* p {
   font-size: 12px;
-}
+} */
 
 .img {
   width: 100%;
@@ -45,10 +45,11 @@ p {
 .list-title {
   margin: 10px;
   cursor: pointer;
-  color: rgb(0, 0, 0);
+  color: rgb(235, 175, 175);
+  font-weight: bold;
 }
 .list-title:hover {
-  color: rgb(235, 175, 175);
+  color: rgb(207, 73, 73);
   transform: scale(1.2);
   transition: all 0.3s;
 }
